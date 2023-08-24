@@ -19,11 +19,10 @@ resource "aws_s3_bucket" "website_redirect" {
 }
 
 provider "aws" {
-  alias = "test"
   region  = "eu-west-3"
     assume_role {
       role_arn = "arn:aws:iam::990472328692:role/role-np-sformproduct-stage-automation"
     }
-
+  version = "~> 3.74"
   # ... (any additional provider configuration)
 }
