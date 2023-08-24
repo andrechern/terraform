@@ -23,6 +23,5 @@ provider "aws" {
     assume_role {
       role_arn = "arn:aws:iam::990472328692:role/role-np-sformproduct-stage-automation"
     }
-  version = "~> 3.74"
   # ... (any additional provider configuration)
 }
